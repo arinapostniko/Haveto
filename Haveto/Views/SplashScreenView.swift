@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct SplashScreenView: View {
+    @ObservedObject var viewModel = SplashScreenViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Image("logo")
+                .resizable()
+                .frame(width: 70, height: 70)
+                .fullScreenCover(isPresented: $viewModel.isCompleteLoading) {
+                    ContentView()
+                }
+        }
     }
 }
 

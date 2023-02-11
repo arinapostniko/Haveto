@@ -8,14 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selection = 0
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView(selection: $selection) {
+            SearchView()
+                .tabItem {
+                    selection == 0 ? Image("selected-add") : Image("add")
+                }
+                .tag(0)
+            ProfileView()
+                .tabItem {
+                    selection == 1 ? Image("selected-profile") : Image("profile")
+                }
+                .tag(1)
         }
-        .padding()
     }
 }
 
