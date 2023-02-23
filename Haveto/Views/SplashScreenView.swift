@@ -16,7 +16,7 @@ struct SplashScreenView: View {
                 .resizable()
                 .frame(width: 200, height: 200)
                 .fullScreenCover(isPresented: $viewModel.isCompleteLoading) {
-                    SignInView()
+                    ContentView()
                 }
         }
     }

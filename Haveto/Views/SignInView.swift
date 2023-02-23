@@ -18,7 +18,7 @@ struct SignInView: View {
             HStack {
                 Button(
                     action: {
-                        signInViewModel.signInWithGoogle()
+                        signInViewModel.signIn()
                     },
                     label: {
                         HStack {

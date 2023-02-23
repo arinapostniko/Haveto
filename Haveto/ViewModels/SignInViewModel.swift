@@ -5,39 +5,74 @@
 //  Created by Arina Postnikova on 23.02.23.
 //
 
-import SwiftUI
+import Foundation
 import Firebase
 import GoogleSignIn
 
 class SignInViewModel: ObservableObject {
-    @Published var isLogin: Bool = false
+    enum SignInState {
+        case signedIn
+        case signedOut
+    }
     
-    func signInWithGoogle() {
-        guard let clientId = FirebaseApp.app()?.options.clientID else { return }
-        let config = GIDConfiguration(clientID: clientId)
-
-        GIDSignIn.sharedInstance.signIn(withPresenting: ApplicationUtility.rootViewController) { [self] user, err in
-            if let error = err {
+    @Published var state: SignInState = .signedOut
+    
+    init() {
+        checkAuth()
+    }
+    
+    func signIn() {
+        checkAuth()
+        if state == .signedIn { return }
+        
+        guard let clientID = FirebaseApp.app()?.options.clientID else { return }
+        
+        let configuration = GIDConfiguration(clientID: clientID)
+        
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene else { return }
+        guard let rootViewController = windowScene.windows.first?.rootViewController else { return }
+        
+        GIDSignIn.sharedInstance.signIn(with: configuration, presenting: rootViewController) { [weak self] user, error in
+            self?.authenticateUser(for: user, with: error)
+        }
+    }
+    
+    private func checkAuth() {
+        if GIDSignIn.sharedInstance.hasPreviousSignIn() {
+            GIDSignIn.sharedInstance.restorePreviousSignIn { [weak self] user, error in
+                self?.authenticateUser(for: user, with: error)
+            }
+        }
+    }
+    
+    private func authenticateUser(for user: GIDGoogleUser?, with error: Error?) {
+        if let error = error {
+            print(error.localizedDescription)
+            return
+        }
+        
+        guard let authentication = user?.authentication, let idToken = authentication.idToken else { return }
+        
+        let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: authentication.accessToken)
+        
+        Auth.auth().signIn(with: credential) { [unowned self] (_, error) in
+            if let error = error {
                 print(error.localizedDescription)
-                return
+            } else {
+                state = .signedIn
             }
+        }
+    }
+    
+    func signOut() {
+        GIDSignIn.sharedInstance.signOut()
+        
+        do {
+            try Auth.auth().signOut()
             
-            guard let authentication = user?.authentication,
-                  let idToken = authentication.idToken
-            else { return }
-            
-            let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: authentication.accessToken)
-            
-            Auth.auth().signIn(with: credential) { result, error in
-                if let err = error {
-                    print(err.localizedDescription)
-                    return
-                }
-                
-                guard let user = result?.user else { return }
-                print(user.displayName)
-                isLogin.toggle()
-            }
+            state = .signedOut
+        } catch {
+            print(error.localizedDescription)
         }
     }
 }

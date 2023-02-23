@@ -8,26 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var selection = 0
-    
-    var body: some View {
-        TabView(selection: $selection) {
-            SearchView()
-                .tabItem {
-                    selection == 0 ? Image("selected-add") : Image("add")
-                }
-                .tag(0)
-            ProfileView()
-                .tabItem {
-                    selection == 1 ? Image("selected-profile") : Image("profile")
-                }
-                .tag(1)
-        }
+  @EnvironmentObject var viewModel: SignInViewModel
+  
+  var body: some View {
+    switch viewModel.state {
+      case .signedIn: HomeView()
+      case .signedOut: SignInView()
     }
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+  static var previews: some View {
+    ContentView()
+          .environmentObject(SignInViewModel())
+  }
 }

@@ -8,11 +8,19 @@
 import SwiftUI
 
 struct SearchView: View {
+    @EnvironmentObject var viewModel: SignInViewModel
+    
     var body: some View {
         NavigationView {
-            Text("")
-                .navigationTitle("Search")
-                .navigationBarTitleDisplayMode(.large)
+            VStack {
+                Spacer()
+                Button("sign out") {
+                    viewModel.signOut()
+                }
+                Text("")
+                    .navigationTitle("Search")
+                    .navigationBarTitleDisplayMode(.large)
+            }
         }
     }
 }
