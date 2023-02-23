@@ -12,9 +12,9 @@ struct SplashScreenView: View {
     
     var body: some View {
         VStack {
-            Image("logo")
+            Image("appname")
                 .resizable()
-                .frame(width: 70, height: 70)
+                .frame(width: 200, height: 200)
                 .fullScreenCover(isPresented: $viewModel.isCompleteLoading) {
                     ContentView()
                 }
