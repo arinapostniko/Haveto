@@ -10,6 +10,10 @@ import SwiftUI
 struct SearchView: View {
     @EnvironmentObject var viewModel: SignInViewModel
     
+    init() {
+        UINavigationBar.appearance().largeTitleTextAttributes = [.font: UIFont(name: "Montserrat-Bold", size: 40)!]
+    }
+    
     var body: some View {
         NavigationView {
             VStack {
