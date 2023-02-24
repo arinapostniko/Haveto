@@ -13,7 +13,7 @@ struct SignInView: View {
     var body: some View {
         VStack {
             Text("Welcome,\nlogin to continue")
-                .font(.custom("Montserrat-Bold", size: 35))
+                .font(.custom(Fonts.bold, size: 35))
             HStack {
                 Button(
                     action: {
@@ -24,7 +24,7 @@ struct SignInView: View {
                             Image("whitegooglelogo")
                             Text("Sign in with Google")
                                 .foregroundColor(.white)
-                                .font(.custom("Montserrat-Regular", size: 15))
+                                .font(.custom(Fonts.regular, size: 15))
                         } }
                 )
                 .padding(.horizontal)

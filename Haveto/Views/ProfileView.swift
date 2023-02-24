@@ -10,6 +10,7 @@ import GoogleSignIn
 
 struct ProfileView: View {
     @EnvironmentObject var viewModel: SignInViewModel
+    @State private var showModal: Bool = false
     
     private let user = GIDSignIn.sharedInstance.currentUser
     
@@ -19,11 +20,12 @@ struct ProfileView: View {
                 VStack(alignment: .leading) {
                     VStack(alignment: .leading) {
                         Text(user?.profile?.name ?? "Name")
-                            .font(.custom("Montserrat-Bold", size: 20))
+                            .font(.custom(Fonts.bold, size: 20))
                     }
                     VStack {
                         Button(
                             action: {
+                                self.showModal = true
                                 
                             },
                             label: {
@@ -31,6 +33,9 @@ struct ProfileView: View {
                                     Image("settings")
                                 } }
                         )
+                        .sheet(isPresented: self.$showModal) {
+                                 SettingsView()
+                                }
                     }
                 }
                 

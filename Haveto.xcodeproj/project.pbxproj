@@ -14,6 +14,9 @@
 		FE7CC2F32997C9D300F66E82 /* HavetoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7CC2F22997C9D300F66E82 /* HavetoTests.swift */; };
 		FE7CC2FD2997C9D300F66E82 /* HavetoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7CC2FC2997C9D300F66E82 /* HavetoUITests.swift */; };
 		FE7CC2FF2997C9D300F66E82 /* HavetoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7CC2FE2997C9D300F66E82 /* HavetoUITestsLaunchTests.swift */; };
+		FEA53C0429A8EF5F00F0981A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA53C0329A8EF5F00F0981A /* SettingsView.swift */; };
+		FEB2253429A8FEFA002F34DF /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB2253329A8FEFA002F34DF /* Fonts.swift */; };
+		FEB2253629A90250002F34DF /* MailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB2253529A90250002F34DF /* MailViewModel.swift */; };
 		FECF0D7D29A773E40023CD27 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECF0D7C29A773E40023CD27 /* SignInView.swift */; };
 		FECF0D8529A786CB0023CD27 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FECF0D8429A786CB0023CD27 /* FirebaseAuth */; };
 		FECF0D8729A787280023CD27 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FECF0D8629A787280023CD27 /* GoogleService-Info.plist */; };
@@ -64,6 +67,9 @@
 		FE7CC2F82997C9D300F66E82 /* HavetoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HavetoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE7CC2FC2997C9D300F66E82 /* HavetoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HavetoUITests.swift; sourceTree = "<group>"; };
 		FE7CC2FE2997C9D300F66E82 /* HavetoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HavetoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FEA53C0329A8EF5F00F0981A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		FEB2253329A8FEFA002F34DF /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		FEB2253529A90250002F34DF /* MailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailViewModel.swift; sourceTree = "<group>"; };
 		FECF0D7C29A773E40023CD27 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		FECF0D8629A787280023CD27 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FECF0D8829A793D10023CD27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -140,6 +146,7 @@
 				FE7CC30B2997CBA700F66E82 /* Application */,
 				FE7CC30C2997CBB100F66E82 /* Views */,
 				FEDF30E52997CCD700FF1859 /* ViewModels */,
+				FEB2253229A8FED5002F34DF /* Utilities */,
 				FE7CC2E52997C9D300F66E82 /* Assets.xcassets */,
 				FED868E929A8A5C200BD3081 /* Fonts */,
 				FE7CC2E72997C9D300F66E82 /* Preview Content */,
@@ -189,8 +196,17 @@
 				FECF0D9929A7B8560023CD27 /* HomeView.swift */,
 				FEDF30E62997D13500FF1859 /* SearchView.swift */,
 				FEDF30E82997D14600FF1859 /* ProfileView.swift */,
+				FEA53C0329A8EF5F00F0981A /* SettingsView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		FEB2253229A8FED5002F34DF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FEB2253329A8FEFA002F34DF /* Fonts.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		FED868E929A8A5C200BD3081 /* Fonts */ = {
@@ -214,6 +230,7 @@
 			children = (
 				FEDF30E32997CCD100FF1859 /* SplashScreenViewModel.swift */,
 				FECF0D8929A794050023CD27 /* SignInViewModel.swift */,
+				FEB2253529A90250002F34DF /* MailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -372,10 +389,13 @@
 				FECF0D9A29A7B8560023CD27 /* HomeView.swift in Sources */,
 				FE7CC2E42997C9D200F66E82 /* ContentView.swift in Sources */,
 				FEDF30E42997CCD100FF1859 /* SplashScreenViewModel.swift in Sources */,
+				FEA53C0429A8EF5F00F0981A /* SettingsView.swift in Sources */,
 				FECF0D8A29A794050023CD27 /* SignInViewModel.swift in Sources */,
 				FE7CC2E22997C9D200F66E82 /* HavetoApp.swift in Sources */,
+				FEB2253429A8FEFA002F34DF /* Fonts.swift in Sources */,
 				FEDF30E92997D14600FF1859 /* ProfileView.swift in Sources */,
 				FEDF30E22997CC9600FF1859 /* SplashScreenView.swift in Sources */,
+				FEB2253629A90250002F34DF /* MailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
