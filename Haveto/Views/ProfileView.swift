@@ -34,13 +34,11 @@ struct ProfileView: View {
                                 } }
                         )
                         .sheet(isPresented: self.$showModal) {
-                                 SettingsView()
-                                }
+                            SettingsView()
+                        }
                     }
                 }
-                
                 Spacer()
-                
                 NetworkImage(url: user?.profile?.imageURL(withDimension: 200))
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 100, height: 100, alignment: .trailing)
@@ -48,10 +46,9 @@ struct ProfileView: View {
             }
             .padding()
             .frame(maxWidth: .infinity)
-//            .background(Color(.secondarySystemBackground))
+            //            .background(Color(.secondarySystemBackground))
             .cornerRadius(12)
             .padding()
-            
             Spacer()
         }
     }
