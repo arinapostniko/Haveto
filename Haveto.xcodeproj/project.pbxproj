@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE4D13A529B0E10C00FB4D0B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FE4D13A429B0E10C00FB4D0B /* Alamofire */; };
 		FE7CC2E22997C9D200F66E82 /* HavetoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7CC2E12997C9D200F66E82 /* HavetoApp.swift */; };
 		FE7CC2E42997C9D200F66E82 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7CC2E32997C9D200F66E82 /* ContentView.swift */; };
 		FE7CC2E62997C9D300F66E82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE7CC2E52997C9D300F66E82 /* Assets.xcassets */; };
@@ -37,7 +38,6 @@
 		FEDF30E42997CCD100FF1859 /* SplashScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF30E32997CCD100FF1859 /* SplashScreenViewModel.swift */; };
 		FEDF30E72997D13500FF1859 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF30E62997D13500FF1859 /* SearchView.swift */; };
 		FEDF30E92997D14600FF1859 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF30E82997D14600FF1859 /* ProfileView.swift */; };
-		FEF4995529AA014400651AAB /* OvalTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF4995429AA014400651AAB /* OvalTextFieldStyle.swift */; };
 		FEF4995829AA0D0000651AAB /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF4995729AA0D0000651AAB /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
@@ -90,7 +90,6 @@
 		FEDF30E32997CCD100FF1859 /* SplashScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewModel.swift; sourceTree = "<group>"; };
 		FEDF30E62997D13500FF1859 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		FEDF30E82997D14600FF1859 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		FEF4995429AA014400651AAB /* OvalTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OvalTextFieldStyle.swift; sourceTree = "<group>"; };
 		FEF4995729AA0D0000651AAB /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +99,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FECF0D9829A7B78C0023CD27 /* GoogleSignInSwift in Frameworks */,
+				FE4D13A529B0E10C00FB4D0B /* Alamofire in Frameworks */,
 				FECF0D8529A786CB0023CD27 /* FirebaseAuth in Frameworks */,
 				FECF0D9629A7B78C0023CD27 /* GoogleSignIn in Frameworks */,
 			);
@@ -209,7 +209,6 @@
 			isa = PBXGroup;
 			children = (
 				FEB2253329A8FEFA002F34DF /* Fonts.swift */,
-				FEF4995429AA014400651AAB /* OvalTextFieldStyle.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -269,6 +268,7 @@
 				FECF0D8429A786CB0023CD27 /* FirebaseAuth */,
 				FECF0D9529A7B78C0023CD27 /* GoogleSignIn */,
 				FECF0D9729A7B78C0023CD27 /* GoogleSignInSwift */,
+				FE4D13A429B0E10C00FB4D0B /* Alamofire */,
 			);
 			productName = Haveto;
 			productReference = FE7CC2DE2997C9D200F66E82 /* Haveto.app */;
@@ -345,6 +345,7 @@
 			packageReferences = (
 				FECF0D8329A786CB0023CD27 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				FECF0D9429A7B78C0023CD27 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				FE4D13A329B0E10B00FB4D0B /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = FE7CC2DF2997C9D200F66E82 /* Products */;
 			projectDirPath = "";
@@ -406,7 +407,6 @@
 				FEA53C0429A8EF5F00F0981A /* SettingsView.swift in Sources */,
 				FECF0D8A29A794050023CD27 /* SignInViewModel.swift in Sources */,
 				FEF4995829AA0D0000651AAB /* SearchBar.swift in Sources */,
-				FEF4995529AA014400651AAB /* OvalTextFieldStyle.swift in Sources */,
 				FE7CC2E22997C9D200F66E82 /* HavetoApp.swift in Sources */,
 				FEB2253429A8FEFA002F34DF /* Fonts.swift in Sources */,
 				FEDF30E92997D14600FF1859 /* ProfileView.swift in Sources */,
@@ -740,6 +740,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		FE4D13A329B0E10B00FB4D0B /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.2;
+			};
+		};
 		FECF0D8329A786CB0023CD27 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -759,6 +767,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		FE4D13A429B0E10C00FB4D0B /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FE4D13A329B0E10B00FB4D0B /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		FECF0D8429A786CB0023CD27 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FECF0D8329A786CB0023CD27 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

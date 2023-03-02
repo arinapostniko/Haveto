@@ -23,14 +23,8 @@ struct SearchView: View {
                         .navigationTitle("Search")
                         .navigationBarTitleDisplayMode(.large)
                     HStack {
-//                        Image("search")
-//                        TextField("Search", text: $query)
-//                            .font(.custom(Fonts.regular, size: 16))
-//                            .autocorrectionDisabled(true)
-//                            .autocapitalization(.none)
                         SearchBar(query: $query)
                     }
-//                    .textFieldStyle(OvalTextFieldStyle())
                     Spacer()
                 }
                 Spacer()
