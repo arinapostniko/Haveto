@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FE4D13A529B0E10C00FB4D0B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FE4D13A429B0E10C00FB4D0B /* Alamofire */; };
+		FE4D13A829B0E18400FB4D0B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FE4D13A729B0E18400FB4D0B /* Kingfisher */; };
 		FE7CC2E22997C9D200F66E82 /* HavetoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7CC2E12997C9D200F66E82 /* HavetoApp.swift */; };
 		FE7CC2E42997C9D200F66E82 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7CC2E32997C9D200F66E82 /* ContentView.swift */; };
 		FE7CC2E62997C9D300F66E82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE7CC2E52997C9D300F66E82 /* Assets.xcassets */; };
@@ -102,6 +103,7 @@
 				FE4D13A529B0E10C00FB4D0B /* Alamofire in Frameworks */,
 				FECF0D8529A786CB0023CD27 /* FirebaseAuth in Frameworks */,
 				FECF0D9629A7B78C0023CD27 /* GoogleSignIn in Frameworks */,
+				FE4D13A829B0E18400FB4D0B /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +271,7 @@
 				FECF0D9529A7B78C0023CD27 /* GoogleSignIn */,
 				FECF0D9729A7B78C0023CD27 /* GoogleSignInSwift */,
 				FE4D13A429B0E10C00FB4D0B /* Alamofire */,
+				FE4D13A729B0E18400FB4D0B /* Kingfisher */,
 			);
 			productName = Haveto;
 			productReference = FE7CC2DE2997C9D200F66E82 /* Haveto.app */;
@@ -346,6 +349,7 @@
 				FECF0D8329A786CB0023CD27 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				FECF0D9429A7B78C0023CD27 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 				FE4D13A329B0E10B00FB4D0B /* XCRemoteSwiftPackageReference "Alamofire" */,
+				FE4D13A629B0E18400FB4D0B /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = FE7CC2DF2997C9D200F66E82 /* Products */;
 			projectDirPath = "";
@@ -748,6 +752,14 @@
 				minimumVersion = 5.6.2;
 			};
 		};
+		FE4D13A629B0E18400FB4D0B /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.3.2;
+			};
+		};
 		FECF0D8329A786CB0023CD27 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -771,6 +783,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FE4D13A329B0E10B00FB4D0B /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		FE4D13A729B0E18400FB4D0B /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FE4D13A629B0E18400FB4D0B /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 		FECF0D8429A786CB0023CD27 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
