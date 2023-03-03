@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct SearchView: View {
-    @State private var query: String = ""
+    //    @State private var query: String = ""
+    @ObservedObject var movieManager: MovieManager = .init()
+    @State var searchTerm: String = ""
+    
+    let randomName = ["Spider", "Black", "Star", "Pirates", "Fast"]
     
     init() {
         UINavigationBar.appearance().largeTitleTextAttributes = [.font: UIFont(name: Fonts.bold, size: 40)!]
@@ -16,19 +20,23 @@ struct SearchView: View {
     
     var body: some View {
         NavigationView {
-            HStack {
-                Spacer()
-                VStack {
-                    Text("")
-                        .navigationTitle("Search")
-                        .navigationBarTitleDisplayMode(.large)
-                    HStack {
-                        SearchBar(query: $query)
-                    }
-                    Spacer()
+            ScrollView{
+                searchButtonView
+//                    .padding()
+//                    .background(RoundedRectangle(cornerRadius: 5).foregroundColor(Color(.systemGray6)))
+//                    .padding()
+                
+                if movieManager.filteredResults(searchTerm: searchTerm).isEmpty{
+                    errorMessageView
+                }else{
+                    searchListView
                 }
-                Spacer()
+                
             }
+            .navigationTitle("Search")
+        }
+        .onAppear{
+            movieManager.fetchFilms(searchTerm: randomName.randomElement()!)
         }
     }
 }
