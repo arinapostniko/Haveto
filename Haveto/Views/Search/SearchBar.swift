@@ -29,7 +29,7 @@ struct SearchBar: View {
             .padding(7)
             .padding(.horizontal, 25)
             .background(Color(.systemGray6))
-            .cornerRadius(8)
+            .cornerRadius(10)
             .keyboardType(.webSearch)
             .overlay(
                 HStack {
@@ -49,7 +49,7 @@ struct SearchBar: View {
                     }
                 }
             )
-            .padding(.horizontal, 10)
+            .padding(.horizontal, 20)
             .onTapGesture {
                 self.isEditing = true
             }        }

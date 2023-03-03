@@ -22,14 +22,12 @@ struct SingleFilmView: View {
             VStack(alignment: .leading) {
                 HStack {
                     Text(filmSubView.title ?? "")
-//                        .fontWeight(.bold)
                         .font(.custom(Fonts.bold, size: 17))
                         .multilineTextAlignment(.leading)
                     Spacer()
                 }
                 
                 Text(filmSubView.year ?? "")
-//                    .fontWeight(.light)
                     .font(.custom(Fonts.light, size: 13))
                     .font(.footnote)
             }
@@ -38,7 +36,7 @@ struct SingleFilmView: View {
         }
         .padding()
         .background(Color(.systemGray6))
-        .cornerRadius(5)
-        .padding(.horizontal)
+        .cornerRadius(10)
+        .padding(.horizontal, 20)
     }
 }
