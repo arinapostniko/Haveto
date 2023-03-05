@@ -12,7 +12,7 @@ extension SearchView {
     var searchListView: some View {
         ForEach(movieManager.filteredResults(searchTerm: searchTerm), id: \.self){ film in
             NavigationLink {
-//                DetailedView(filmDetailedView: film)
+                SelectedFilmView(filmDetailedView: film)
             } label: {
                 VStack(spacing: 0){
                     SingleFilmView(filmSubView: film)

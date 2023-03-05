@@ -31,7 +31,6 @@ struct SignInView: View {
                 .padding(10)
                 .background(Color.black)
                 .cornerRadius(25)
-                
             }
         }
     }

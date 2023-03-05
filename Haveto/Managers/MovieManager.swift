@@ -16,12 +16,12 @@ class MovieManager: ObservableObject {
         let apiKey = "fa07aab9" //"f25e3b1a"
         let baseURL = "https://www.omdbapi.com/?apikey=\(apiKey)&s=\(searchTerm)"
         AF.request(baseURL).responseDecodable(of: ResponseModel.self) { response in
-            self.filmsArray = (response.value?.search) ?? self.parseStaticJSON(fileName: "ConstantFilm", fileExtention: "json")
+            self.filmsArray = (response.value?.search) ?? self.parseStaticJSON(fileName: "ConstantFilm", fileExtension: "json")
         }
     }
     
-    func parseStaticJSON(fileName: String, fileExtention: String) -> [Search] {
-        guard let filePath = Bundle.main.url(forResource: fileName, withExtension: fileExtention) else {
+    func parseStaticJSON(fileName: String, fileExtension: String) -> [Search] {
+        guard let filePath = Bundle.main.url(forResource: fileName, withExtension: fileExtension) else {
             fatalError("File path not found")
         }
         

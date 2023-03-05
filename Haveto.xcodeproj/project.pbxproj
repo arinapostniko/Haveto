@@ -45,6 +45,8 @@
 		FEDF30E72997D13500FF1859 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF30E62997D13500FF1859 /* SearchView.swift */; };
 		FEDF30E92997D14600FF1859 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF30E82997D14600FF1859 /* ProfileView.swift */; };
 		FEF4995829AA0D0000651AAB /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF4995729AA0D0000651AAB /* SearchBar.swift */; };
+		FEF7383829B4DCB80003C24E /* SelectedFilmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF7383729B4DCB80003C24E /* SelectedFilmView.swift */; };
+		FEF7383A29B4DD0F0003C24E /* SelectedFilmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF7383929B4DD0F0003C24E /* SelectedFilmViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +104,8 @@
 		FEDF30E62997D13500FF1859 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		FEDF30E82997D14600FF1859 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		FEF4995729AA0D0000651AAB /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		FEF7383729B4DCB80003C24E /* SelectedFilmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedFilmView.swift; sourceTree = "<group>"; };
+		FEF7383929B4DD0F0003C24E /* SelectedFilmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedFilmViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +237,7 @@
 				FEDF30E82997D14600FF1859 /* ProfileView.swift */,
 				FEA53C0329A8EF5F00F0981A /* SettingsView.swift */,
 				FE4D13B129B0EF6B00FB4D0B /* SingleFilmView.swift */,
+				FEF7383729B4DCB80003C24E /* SelectedFilmView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -268,6 +273,7 @@
 				FECF0D8929A794050023CD27 /* SignInViewModel.swift */,
 				FEB2253529A90250002F34DF /* MailViewModel.swift */,
 				FE4D13B329B0F33900FB4D0B /* SearchViewModel.swift */,
+				FEF7383929B4DD0F0003C24E /* SelectedFilmViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -437,6 +443,7 @@
 				FEDF30E72997D13500FF1859 /* SearchView.swift in Sources */,
 				FECF0D7D29A773E40023CD27 /* SignInView.swift in Sources */,
 				FE4D13AB29B0EC9F00FB4D0B /* MovieManager.swift in Sources */,
+				FEF7383829B4DCB80003C24E /* SelectedFilmView.swift in Sources */,
 				FECF0D9A29A7B8560023CD27 /* HomeView.swift in Sources */,
 				FE7CC2E42997C9D200F66E82 /* ContentView.swift in Sources */,
 				FEDF30E42997CCD100FF1859 /* SplashScreenViewModel.swift in Sources */,
@@ -444,6 +451,7 @@
 				FEA53C0429A8EF5F00F0981A /* SettingsView.swift in Sources */,
 				FECF0D8A29A794050023CD27 /* SignInViewModel.swift in Sources */,
 				FEF4995829AA0D0000651AAB /* SearchBar.swift in Sources */,
+				FEF7383A29B4DD0F0003C24E /* SelectedFilmViewModel.swift in Sources */,
 				FE4D13B229B0EF6B00FB4D0B /* SingleFilmView.swift in Sources */,
 				FE7CC2E22997C9D200F66E82 /* HavetoApp.swift in Sources */,
 				FEB2253429A8FEFA002F34DF /* Fonts.swift in Sources */,
