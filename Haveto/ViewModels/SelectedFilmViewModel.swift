@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Kingfisher
+import RealmSwift
 
 extension SelectedFilmView {
     
@@ -39,7 +40,7 @@ extension SelectedFilmView {
     var watchedButton: some View {
         Button(
             action: {
-                // TODO: add film to watched list
+                setMovieAsWatched(movie: filmDetailedView)
             },
             label: {
                 HStack {
@@ -53,5 +54,33 @@ extension SelectedFilmView {
         .padding(10)
         .background(Color(.systemGray6))
         .cornerRadius(25)
+    }
+    
+    var checkButton: some View {
+        Button(
+            action: {
+                let realm = try! Realm()
+                let mvs = realm.objects(MovieEntity.self)
+                print(mvs)
+                print("PATH: \(Realm.Configuration.defaultConfiguration.fileURL!)")
+            },
+            label: {
+                Text("Check")
+            }
+        )
+    }
+    
+    func setMovieAsWatched(movie: MovieModel) {
+        let realm = try! Realm()
+        
+        try! realm.write({
+            let realmMovie = MovieEntity()
+            realmMovie.title = movie.title
+            realmMovie.year = movie.year
+            realmMovie.imdbID = movie.imdbID
+            realmMovie.type = movie.type
+            realmMovie.poster = movie.poster
+            realm.add(realmMovie)
+            })
     }
 }

@@ -9,7 +9,7 @@ import SwiftUI
 import Kingfisher
 
 struct SingleFilmView: View {
-    var filmSubView: Search
+    var filmSubView: MovieModel
     
     var body: some View {
         HStack(spacing: 20) {
@@ -32,7 +32,6 @@ struct SingleFilmView: View {
                     .font(.footnote)
             }
             .foregroundColor(.black)
-            
         }
         .padding()
         .background(Color(.systemGray6))
@@ -40,3 +39,4 @@ struct SingleFilmView: View {
         .padding(.horizontal, 20)
     }
 }
+

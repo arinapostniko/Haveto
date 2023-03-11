@@ -1,5 +1,5 @@
 //
-//  SearchModel.swift
+//  MovieModel.swift
 //  Haveto
 //
 //  Created by Arina Postnikova on 2.03.23.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Search: Codable, Hashable {
+struct MovieModel: Codable, Hashable {
     let title: String?
     let year: String?
     let imdbID: String?

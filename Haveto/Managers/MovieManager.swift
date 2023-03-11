@@ -10,7 +10,7 @@ import SwiftUI
 import Alamofire
 
 class MovieManager: ObservableObject {
-    @Published var filmsArray: [Search] = []
+    @Published var filmsArray: [MovieModel] = []
     
     func fetchFilms(searchTerm: String){
         let apiKey = "fa07aab9" //"f25e3b1a"
@@ -20,7 +20,7 @@ class MovieManager: ObservableObject {
         }
     }
     
-    func parseStaticJSON(fileName: String, fileExtension: String) -> [Search] {
+    func parseStaticJSON(fileName: String, fileExtension: String) -> [MovieModel] {
         guard let filePath = Bundle.main.url(forResource: fileName, withExtension: fileExtension) else {
             fatalError("File path not found")
         }
@@ -38,13 +38,13 @@ class MovieManager: ObservableObject {
         return decodePreviousData.search!
     }
     
-    func filterArray(searchTerm: String) -> [Search]? {
+    func filterArray(searchTerm: String) -> [MovieModel]? {
         return filmsArray.filter {
             $0.title!.localizedStandardContains(searchTerm)
         }
     }
     
-    func filteredResults(searchTerm: String) -> [Search] {
+    func filteredResults(searchTerm: String) -> [MovieModel] {
         if searchTerm.isEmpty {
             return self.filmsArray
         } else{

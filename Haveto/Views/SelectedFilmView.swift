@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct SelectedFilmView: View {
-    var filmDetailedView: Search
+    var filmDetailedView: MovieModel
     
     var body: some View {
         ScrollView {
             imageView
             textDetails
             watchedButton
+            checkButton
         }
         .padding(.horizontal)
         .navigationBarTitleDisplayMode(.inline)

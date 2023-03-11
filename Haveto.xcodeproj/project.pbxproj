@@ -10,7 +10,7 @@
 		FE4D13A529B0E10C00FB4D0B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FE4D13A429B0E10C00FB4D0B /* Alamofire */; };
 		FE4D13A829B0E18400FB4D0B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FE4D13A729B0E18400FB4D0B /* Kingfisher */; };
 		FE4D13AB29B0EC9F00FB4D0B /* MovieManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4D13AA29B0EC9F00FB4D0B /* MovieManager.swift */; };
-		FE4D13AE29B0ECF300FB4D0B /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4D13AD29B0ECF300FB4D0B /* SearchModel.swift */; };
+		FE4D13AE29B0ECF300FB4D0B /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4D13AD29B0ECF300FB4D0B /* MovieModel.swift */; };
 		FE4D13B029B0ED4F00FB4D0B /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4D13AF29B0ED4F00FB4D0B /* ResponseModel.swift */; };
 		FE4D13B229B0EF6B00FB4D0B /* SingleFilmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4D13B129B0EF6B00FB4D0B /* SingleFilmView.swift */; };
 		FE4D13B429B0F33900FB4D0B /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4D13B329B0F33900FB4D0B /* SearchViewModel.swift */; };
@@ -44,6 +44,10 @@
 		FEDF30E42997CCD100FF1859 /* SplashScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF30E32997CCD100FF1859 /* SplashScreenViewModel.swift */; };
 		FEDF30E72997D13500FF1859 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF30E62997D13500FF1859 /* SearchView.swift */; };
 		FEDF30E92997D14600FF1859 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF30E82997D14600FF1859 /* ProfileView.swift */; };
+		FEE204D129BA3928000D331C /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE204D029BA3928000D331C /* ProfileViewModel.swift */; };
+		FEE204D429BA4E88000D331C /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = FEE204D329BA4E88000D331C /* Realm */; };
+		FEE204D629BA4E88000D331C /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FEE204D529BA4E88000D331C /* RealmSwift */; };
+		FEE204D829BA549D000D331C /* MovieEntityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE204D729BA549D000D331C /* MovieEntityModel.swift */; };
 		FEF4995829AA0D0000651AAB /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF4995729AA0D0000651AAB /* SearchBar.swift */; };
 		FEF7383829B4DCB80003C24E /* SelectedFilmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF7383729B4DCB80003C24E /* SelectedFilmView.swift */; };
 		FEF7383A29B4DD0F0003C24E /* SelectedFilmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF7383929B4DD0F0003C24E /* SelectedFilmViewModel.swift */; };
@@ -68,7 +72,7 @@
 
 /* Begin PBXFileReference section */
 		FE4D13AA29B0EC9F00FB4D0B /* MovieManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieManager.swift; sourceTree = "<group>"; };
-		FE4D13AD29B0ECF300FB4D0B /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
+		FE4D13AD29B0ECF300FB4D0B /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		FE4D13AF29B0ED4F00FB4D0B /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
 		FE4D13B129B0EF6B00FB4D0B /* SingleFilmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFilmView.swift; sourceTree = "<group>"; };
 		FE4D13B329B0F33900FB4D0B /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 		FEDF30E32997CCD100FF1859 /* SplashScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewModel.swift; sourceTree = "<group>"; };
 		FEDF30E62997D13500FF1859 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		FEDF30E82997D14600FF1859 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		FEE204D029BA3928000D331C /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		FEE204D729BA549D000D331C /* MovieEntityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieEntityModel.swift; sourceTree = "<group>"; };
 		FEF4995729AA0D0000651AAB /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		FEF7383729B4DCB80003C24E /* SelectedFilmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedFilmView.swift; sourceTree = "<group>"; };
 		FEF7383929B4DD0F0003C24E /* SelectedFilmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedFilmViewModel.swift; sourceTree = "<group>"; };
@@ -113,7 +119,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEE204D429BA4E88000D331C /* Realm in Frameworks */,
 				FECF0D9829A7B78C0023CD27 /* GoogleSignInSwift in Frameworks */,
+				FEE204D629BA4E88000D331C /* RealmSwift in Frameworks */,
 				FE4D13A529B0E10C00FB4D0B /* Alamofire in Frameworks */,
 				FECF0D8529A786CB0023CD27 /* FirebaseAuth in Frameworks */,
 				FECF0D9629A7B78C0023CD27 /* GoogleSignIn in Frameworks */,
@@ -149,8 +157,9 @@
 		FE4D13AC29B0ECD800FB4D0B /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FE4D13AD29B0ECF300FB4D0B /* SearchModel.swift */,
+				FE4D13AD29B0ECF300FB4D0B /* MovieModel.swift */,
 				FE4D13AF29B0ED4F00FB4D0B /* ResponseModel.swift */,
+				FEE204D729BA549D000D331C /* MovieEntityModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -274,6 +283,7 @@
 				FEB2253529A90250002F34DF /* MailViewModel.swift */,
 				FE4D13B329B0F33900FB4D0B /* SearchViewModel.swift */,
 				FEF7383929B4DD0F0003C24E /* SelectedFilmViewModel.swift */,
+				FEE204D029BA3928000D331C /* ProfileViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -309,6 +319,8 @@
 				FECF0D9729A7B78C0023CD27 /* GoogleSignInSwift */,
 				FE4D13A429B0E10C00FB4D0B /* Alamofire */,
 				FE4D13A729B0E18400FB4D0B /* Kingfisher */,
+				FEE204D329BA4E88000D331C /* Realm */,
+				FEE204D529BA4E88000D331C /* RealmSwift */,
 			);
 			productName = Haveto;
 			productReference = FE7CC2DE2997C9D200F66E82 /* Haveto.app */;
@@ -387,6 +399,7 @@
 				FECF0D9429A7B78C0023CD27 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 				FE4D13A329B0E10B00FB4D0B /* XCRemoteSwiftPackageReference "Alamofire" */,
 				FE4D13A629B0E18400FB4D0B /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				FEE204D229BA4E88000D331C /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = FE7CC2DF2997C9D200F66E82 /* Products */;
 			projectDirPath = "";
@@ -440,12 +453,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEE204D829BA549D000D331C /* MovieEntityModel.swift in Sources */,
 				FEDF30E72997D13500FF1859 /* SearchView.swift in Sources */,
 				FECF0D7D29A773E40023CD27 /* SignInView.swift in Sources */,
 				FE4D13AB29B0EC9F00FB4D0B /* MovieManager.swift in Sources */,
 				FEF7383829B4DCB80003C24E /* SelectedFilmView.swift in Sources */,
 				FECF0D9A29A7B8560023CD27 /* HomeView.swift in Sources */,
 				FE7CC2E42997C9D200F66E82 /* ContentView.swift in Sources */,
+				FEE204D129BA3928000D331C /* ProfileViewModel.swift in Sources */,
 				FEDF30E42997CCD100FF1859 /* SplashScreenViewModel.swift in Sources */,
 				FE4D13B429B0F33900FB4D0B /* SearchViewModel.swift in Sources */,
 				FEA53C0429A8EF5F00F0981A /* SettingsView.swift in Sources */,
@@ -456,7 +471,7 @@
 				FE7CC2E22997C9D200F66E82 /* HavetoApp.swift in Sources */,
 				FEB2253429A8FEFA002F34DF /* Fonts.swift in Sources */,
 				FEDF30E92997D14600FF1859 /* ProfileView.swift in Sources */,
-				FE4D13AE29B0ECF300FB4D0B /* SearchModel.swift in Sources */,
+				FE4D13AE29B0ECF300FB4D0B /* MovieModel.swift in Sources */,
 				FEDF30E22997CC9600FF1859 /* SplashScreenView.swift in Sources */,
 				FE4D13B029B0ED4F00FB4D0B /* ResponseModel.swift in Sources */,
 				FEB2253629A90250002F34DF /* MailViewModel.swift in Sources */,
@@ -820,6 +835,14 @@
 				minimumVersion = 6.1.0;
 			};
 		};
+		FEE204D229BA4E88000D331C /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -847,6 +870,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FECF0D9429A7B78C0023CD27 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
 			productName = GoogleSignInSwift;
+		};
+		FEE204D329BA4E88000D331C /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEE204D229BA4E88000D331C /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		FEE204D529BA4E88000D331C /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEE204D229BA4E88000D331C /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

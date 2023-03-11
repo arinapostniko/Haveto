@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct SearchView: View {
-    //    @State private var query: String = ""
     @ObservedObject var movieManager: MovieManager = .init()
     @State var searchTerm: String = ""
     
@@ -20,22 +19,18 @@ struct SearchView: View {
     
     var body: some View {
         NavigationView {
-            ScrollView{
+            ScrollView {
                 searchButtonView
-//                    .padding()
-//                    .background(RoundedRectangle(cornerRadius: 5).foregroundColor(Color(.systemGray6)))
-//                    .padding()
                 
-                if movieManager.filteredResults(searchTerm: searchTerm).isEmpty{
+                if movieManager.filteredResults(searchTerm: searchTerm).isEmpty {
                     errorMessageView
-                }else{
+                } else {
                     searchListView
                 }
-                
             }
             .navigationTitle("Search")
         }
-        .onAppear{
+        .onAppear {
             movieManager.fetchFilms(searchTerm: randomName.randomElement()!)
         }
     }

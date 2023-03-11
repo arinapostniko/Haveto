@@ -8,7 +8,7 @@
 import Foundation
 
 struct ResponseModel: Codable {
-    let search: [Search]?
+    let search: [MovieModel]?
     let totalResults: String?
     let response: String?
 
@@ -20,7 +20,7 @@ struct ResponseModel: Codable {
 
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        search = try values.decodeIfPresent([Search].self, forKey: .search)
+        search = try values.decodeIfPresent([MovieModel].self, forKey: .search)
         totalResults = try values.decodeIfPresent(String.self, forKey: .totalResults)
         response = try values.decodeIfPresent(String.self, forKey: .response)
     }

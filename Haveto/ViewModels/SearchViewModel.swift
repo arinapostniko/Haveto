@@ -10,11 +10,11 @@ import SwiftUI
 extension SearchView {
     
     var searchListView: some View {
-        ForEach(movieManager.filteredResults(searchTerm: searchTerm), id: \.self){ film in
+        ForEach(movieManager.filteredResults(searchTerm: searchTerm), id: \.self) { film in
             NavigationLink {
                 SelectedFilmView(filmDetailedView: film)
             } label: {
-                VStack(spacing: 0){
+                VStack(spacing: 0) {
                     SingleFilmView(filmSubView: film)
                 }
             }
