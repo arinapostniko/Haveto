@@ -21,12 +21,12 @@ extension ProfileView {
                         Button(
                             action: {
                                 self.showModal = true
-                                
                             },
                             label: {
                                 HStack {
                                     Image("settings")
-                                } }
+                                }
+                            }
                         )
                         .sheet(isPresented: self.$showModal) {
                             SettingsView()
@@ -46,4 +46,10 @@ extension ProfileView {
             Spacer()
         }
     }
+    
+//    var moviesList: some View {
+//        List(movies.results, id: \.title) { movie in
+//            MovieRow(movie: movie)
+//        }
+//    }
 }

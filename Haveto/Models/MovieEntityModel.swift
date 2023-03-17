@@ -14,4 +14,8 @@ class MovieEntity: Object {
     @Persisted var imdbID: String?
     @Persisted var type: String?
     @Persisted var poster: String?
+    
+//    override static func primaryKey() -> String? {
+//        return "title"
+//    }
 }
