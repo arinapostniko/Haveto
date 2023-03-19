@@ -10,7 +10,6 @@ import UIKit
 import MessageUI
 
 struct MailViewModel: UIViewControllerRepresentable {
-    
     @Environment(\.presentationMode) var presentation
     @Binding var result: Result<MFMailComposeResult, Error>?
     

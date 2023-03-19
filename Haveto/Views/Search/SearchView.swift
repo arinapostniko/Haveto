@@ -11,7 +11,7 @@ struct SearchView: View {
     @ObservedObject var movieManager: MovieManager = .init()
     @State var searchTerm: String = ""
     
-    let randomName = ["Spider", "Black", "Star", "Pirates", "Fast"]
+    let randomName = ["Spider", "Black", "Star", "Pirates", "Fast", "Harry"]
     
     init() {
         UINavigationBar.appearance().largeTitleTextAttributes = [.font: UIFont(name: Fonts.bold, size: 40)!]

@@ -40,12 +40,12 @@ extension SelectedFilmView {
     var watchedButton: some View {
         Button(
             action: {
-                setMovieAsWatched(movie: filmDetailedView)
+                watchedButtonPressed(on: filmDetailedView)
             },
             label: {
                 HStack {
                     Text("Watched")
-                        .foregroundColor(Color.gray)
+                        .foregroundColor(isWatched(filmDetailedView) ? Color.gray : Color.blue)
                         .font(.custom(Fonts.regular, size: 15))
                 }
             }
@@ -70,6 +70,14 @@ extension SelectedFilmView {
         )
     }
     
+    func watchedButtonPressed(on movie: MovieModel) {
+        if isWatched(movie) {
+            setMovieAsUnwatched(movie: movie)
+        } else {
+            setMovieAsWatched(movie: movie)
+        }
+    }
+    
     func setMovieAsWatched(movie: MovieModel) {
         let realm = try! Realm()
         
@@ -82,5 +90,39 @@ extension SelectedFilmView {
             realmMovie.poster = movie.poster
             realm.add(realmMovie)
             })
+        filmDetailedView.isWatched = true
+    }
+    
+    func setMovieAsUnwatched(movie: MovieModel) {
+        let realm = try! Realm()
+        
+        let dbMovies = realm.objects(MovieEntity.self)
+        
+        var currentDbMovie: MovieEntity?
+        
+        for dbMovie in dbMovies {
+            if dbMovie.imdbID == movie.imdbID {
+                currentDbMovie = dbMovie
+            }
+        }
+        
+        if let currentDbMovie {
+            try! realm.write({
+                realm.delete(currentDbMovie)
+            })
+        }
+        filmDetailedView.isWatched = false
+    }
+    
+    func isWatched(_ movie: MovieModel) -> Bool {
+        let realm = try! Realm()
+        let dbMovies = realm.objects(MovieEntity.self)
+        
+        for dbMovie in dbMovies {
+            if dbMovie.imdbID == movie.imdbID {
+                return true
+            }
+        }
+        return false
     }
 }

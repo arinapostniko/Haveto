@@ -13,6 +13,7 @@ struct MovieModel: Codable, Hashable {
     let imdbID: String?
     let type: String?
     let poster: String?
+    var isWatched: Bool?
 
     enum CodingKeys: String, CodingKey {
         case title = "Title"

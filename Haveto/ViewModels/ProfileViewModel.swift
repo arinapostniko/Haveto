@@ -41,15 +41,23 @@ extension ProfileView {
             }
             .padding()
             .frame(maxWidth: .infinity)
-            .cornerRadius(12)
             .padding()
-            Spacer()
         }
     }
     
-//    var moviesList: some View {
-//        List(movies.results, id: \.title) { movie in
-//            MovieRow(movie: movie)
-//        }
-//    }
+    var moviesList: some View {
+        VStack(alignment: .leading) {
+            Text("Watched movies:")
+                .font(.custom(Fonts.semiBold, size: 16))
+            ScrollView {
+                ForEach(movies.results, id: \.title) { movie in
+                    MovieRow(movie: movie)
+                }
+            }
+            .background(Color.white)
+        }
+        .padding()
+        .frame(maxWidth: .infinity)
+        .padding()
+    }
 }

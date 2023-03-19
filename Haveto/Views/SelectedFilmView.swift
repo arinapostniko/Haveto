@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SelectedFilmView: View {
-    var filmDetailedView: MovieModel
+    @State var filmDetailedView: MovieModel
     
     var body: some View {
         ScrollView {

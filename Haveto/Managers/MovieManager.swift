@@ -47,7 +47,7 @@ class MovieManager: ObservableObject {
     func filteredResults(searchTerm: String) -> [MovieModel] {
         if searchTerm.isEmpty {
             return self.filmsArray
-        } else{
+        } else {
             return self.filmsArray.filter {
                 $0.title!.localizedStandardContains(searchTerm)
             }

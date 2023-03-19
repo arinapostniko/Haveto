@@ -12,13 +12,15 @@ import RealmSwift
 struct ProfileView: View {
     @EnvironmentObject var viewModel: SignInViewModel
     @State var showModal: Bool = false
-//    @ObservedObject var movies = BindableResults(results: try! Realm().objects(MovieEntity.self))
+    @ObservedObject var movies = BindableResults(results: try! Realm().objects(MovieEntity.self))
     
     let user = GIDSignIn.sharedInstance.currentUser
     
     var body: some View {
-        profileView
-//        moviesList
+        VStack {
+            profileView
+            moviesList
+        }
     }
 }
 
