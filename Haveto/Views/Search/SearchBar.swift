@@ -12,11 +12,11 @@ struct SearchBar: View {
     @State private var text: String = ""
     @State private var isEditing = false
     
-    init(query: Binding<String>) {
-        self._query = query
-        print("Init")
-    }
- 
+//    init(query: Binding<String>) {
+//        self._query = query
+//        print("Init")
+//    }
+    
     var body: some View {
         HStack(spacing: 0) {
             TextField("Search", text: $text, onCommit: {
@@ -37,7 +37,7 @@ struct SearchBar: View {
                         .foregroundColor(.gray)
                         .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                         .padding(.leading, 5)
-             
+                    
                     if isEditing && text.isNotEmpty {
                         Button(action: {
                             self.text = ""
@@ -52,7 +52,8 @@ struct SearchBar: View {
             .padding(.horizontal, 20)
             .onTapGesture {
                 self.isEditing = true
-            }        }
+            }
+        }
     }
 }
 

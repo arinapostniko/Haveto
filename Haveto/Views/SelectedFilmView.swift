@@ -15,7 +15,7 @@ struct SelectedFilmView: View {
             imageView
             textDetails
             watchedButton
-            checkButton
+//            checkButton
         }
         .padding(.horizontal)
         .navigationBarTitleDisplayMode(.inline)

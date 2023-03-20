@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SearchView: View {
-    @ObservedObject var movieManager: MovieManager = .init()
+    @StateObject var movieManager: MovieManager = MovieManager()
     @State var searchTerm: String = ""
     
     let randomName = ["Spider", "Black", "Star", "Pirates", "Fast", "Harry"]
