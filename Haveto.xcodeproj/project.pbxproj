@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE4D13A529B0E10C00FB4D0B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FE4D13A429B0E10C00FB4D0B /* Alamofire */; };
+		FE4D13A829B0E18400FB4D0B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FE4D13A729B0E18400FB4D0B /* Kingfisher */; };
+		FE4D13AB29B0EC9F00FB4D0B /* MovieManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4D13AA29B0EC9F00FB4D0B /* MovieManager.swift */; };
+		FE4D13AE29B0ECF300FB4D0B /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4D13AD29B0ECF300FB4D0B /* MovieModel.swift */; };
+		FE4D13B029B0ED4F00FB4D0B /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4D13AF29B0ED4F00FB4D0B /* ResponseModel.swift */; };
+		FE4D13B229B0EF6B00FB4D0B /* SingleFilmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4D13B129B0EF6B00FB4D0B /* SingleFilmView.swift */; };
+		FE4D13B429B0F33900FB4D0B /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4D13B329B0F33900FB4D0B /* SearchViewModel.swift */; };
 		FE7CC2E22997C9D200F66E82 /* HavetoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7CC2E12997C9D200F66E82 /* HavetoApp.swift */; };
 		FE7CC2E42997C9D200F66E82 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7CC2E32997C9D200F66E82 /* ContentView.swift */; };
 		FE7CC2E62997C9D300F66E82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE7CC2E52997C9D300F66E82 /* Assets.xcassets */; };
@@ -14,6 +21,38 @@
 		FE7CC2F32997C9D300F66E82 /* HavetoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7CC2F22997C9D300F66E82 /* HavetoTests.swift */; };
 		FE7CC2FD2997C9D300F66E82 /* HavetoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7CC2FC2997C9D300F66E82 /* HavetoUITests.swift */; };
 		FE7CC2FF2997C9D300F66E82 /* HavetoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7CC2FE2997C9D300F66E82 /* HavetoUITestsLaunchTests.swift */; };
+		FEA53C0429A8EF5F00F0981A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA53C0329A8EF5F00F0981A /* SettingsView.swift */; };
+		FEB2253429A8FEFA002F34DF /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB2253329A8FEFA002F34DF /* Fonts.swift */; };
+		FEB2253629A90250002F34DF /* MailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB2253529A90250002F34DF /* MailViewModel.swift */; };
+		FECF0D7D29A773E40023CD27 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECF0D7C29A773E40023CD27 /* SignInView.swift */; };
+		FECF0D8529A786CB0023CD27 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FECF0D8429A786CB0023CD27 /* FirebaseAuth */; };
+		FECF0D8729A787280023CD27 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FECF0D8629A787280023CD27 /* GoogleService-Info.plist */; };
+		FECF0D8A29A794050023CD27 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECF0D8929A794050023CD27 /* SignInViewModel.swift */; };
+		FECF0D9629A7B78C0023CD27 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = FECF0D9529A7B78C0023CD27 /* GoogleSignIn */; };
+		FECF0D9829A7B78C0023CD27 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FECF0D9729A7B78C0023CD27 /* GoogleSignInSwift */; };
+		FECF0D9A29A7B8560023CD27 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECF0D9929A7B8560023CD27 /* HomeView.swift */; };
+		FED868EB29A8A90900BD3081 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FED868E429A8A5BC00BD3081 /* Montserrat-Bold.ttf */; };
+		FED868EC29A8A93700BD3081 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FED868E629A8A5BC00BD3081 /* Montserrat-Black.ttf */; };
+		FED868ED29A8A93B00BD3081 /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FED868E729A8A5BC00BD3081 /* Montserrat-ExtraBold.ttf */; };
+		FED868EE29A8A93E00BD3081 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FED868E529A8A5BC00BD3081 /* Montserrat-ExtraLight.ttf */; };
+		FED868EF29A8A94000BD3081 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FED868E229A8A5BB00BD3081 /* Montserrat-Light.ttf */; };
+		FED868F029A8A94300BD3081 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FED868E029A8A5BB00BD3081 /* Montserrat-Medium.ttf */; };
+		FED868F129A8A94500BD3081 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FED868E129A8A5BB00BD3081 /* Montserrat-Regular.ttf */; };
+		FED868F229A8A94800BD3081 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FED868E329A8A5BC00BD3081 /* Montserrat-SemiBold.ttf */; };
+		FED868F329A8A94B00BD3081 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FED868E829A8A5BC00BD3081 /* Montserrat-Thin.ttf */; };
+		FEDB17D029BF85E4001FA4D1 /* BindableResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDB17CF29BF85E4001FA4D1 /* BindableResults.swift */; };
+		FEDB17D229BF86D7001FA4D1 /* MovieRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDB17D129BF86D7001FA4D1 /* MovieRow.swift */; };
+		FEDF30E22997CC9600FF1859 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF30E12997CC9600FF1859 /* SplashScreenView.swift */; };
+		FEDF30E42997CCD100FF1859 /* SplashScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF30E32997CCD100FF1859 /* SplashScreenViewModel.swift */; };
+		FEDF30E72997D13500FF1859 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF30E62997D13500FF1859 /* SearchView.swift */; };
+		FEDF30E92997D14600FF1859 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDF30E82997D14600FF1859 /* ProfileView.swift */; };
+		FEE204D129BA3928000D331C /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE204D029BA3928000D331C /* ProfileViewModel.swift */; };
+		FEE204D429BA4E88000D331C /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = FEE204D329BA4E88000D331C /* Realm */; };
+		FEE204D629BA4E88000D331C /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FEE204D529BA4E88000D331C /* RealmSwift */; };
+		FEE204D829BA549D000D331C /* MovieEntityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE204D729BA549D000D331C /* MovieEntityModel.swift */; };
+		FEF4995829AA0D0000651AAB /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF4995729AA0D0000651AAB /* SearchBar.swift */; };
+		FEF7383829B4DCB80003C24E /* SelectedFilmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF7383729B4DCB80003C24E /* SelectedFilmView.swift */; };
+		FEF7383A29B4DD0F0003C24E /* SelectedFilmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF7383929B4DD0F0003C24E /* SelectedFilmViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +73,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FE4D13AA29B0EC9F00FB4D0B /* MovieManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieManager.swift; sourceTree = "<group>"; };
+		FE4D13AD29B0ECF300FB4D0B /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		FE4D13AF29B0ED4F00FB4D0B /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		FE4D13B129B0EF6B00FB4D0B /* SingleFilmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFilmView.swift; sourceTree = "<group>"; };
+		FE4D13B329B0F33900FB4D0B /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		FE7CC2DE2997C9D200F66E82 /* Haveto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Haveto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE7CC2E12997C9D200F66E82 /* HavetoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HavetoApp.swift; sourceTree = "<group>"; };
 		FE7CC2E32997C9D200F66E82 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +88,34 @@
 		FE7CC2F82997C9D300F66E82 /* HavetoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HavetoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE7CC2FC2997C9D300F66E82 /* HavetoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HavetoUITests.swift; sourceTree = "<group>"; };
 		FE7CC2FE2997C9D300F66E82 /* HavetoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HavetoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FEA53C0329A8EF5F00F0981A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		FEB2253329A8FEFA002F34DF /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		FEB2253529A90250002F34DF /* MailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailViewModel.swift; sourceTree = "<group>"; };
+		FECF0D7C29A773E40023CD27 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		FECF0D8629A787280023CD27 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FECF0D8829A793D10023CD27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FECF0D8929A794050023CD27 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		FECF0D9929A7B8560023CD27 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FED868E029A8A5BB00BD3081 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		FED868E129A8A5BB00BD3081 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		FED868E229A8A5BB00BD3081 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		FED868E329A8A5BC00BD3081 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		FED868E429A8A5BC00BD3081 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		FED868E529A8A5BC00BD3081 /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		FED868E629A8A5BC00BD3081 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		FED868E729A8A5BC00BD3081 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		FED868E829A8A5BC00BD3081 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		FEDB17CF29BF85E4001FA4D1 /* BindableResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableResults.swift; sourceTree = "<group>"; };
+		FEDB17D129BF86D7001FA4D1 /* MovieRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRow.swift; sourceTree = "<group>"; };
+		FEDF30E12997CC9600FF1859 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		FEDF30E32997CCD100FF1859 /* SplashScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewModel.swift; sourceTree = "<group>"; };
+		FEDF30E62997D13500FF1859 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		FEDF30E82997D14600FF1859 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		FEE204D029BA3928000D331C /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		FEE204D729BA549D000D331C /* MovieEntityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieEntityModel.swift; sourceTree = "<group>"; };
+		FEF4995729AA0D0000651AAB /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		FEF7383729B4DCB80003C24E /* SelectedFilmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedFilmView.swift; sourceTree = "<group>"; };
+		FEF7383929B4DD0F0003C24E /* SelectedFilmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedFilmViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +123,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEE204D429BA4E88000D331C /* Realm in Frameworks */,
+				FECF0D9829A7B78C0023CD27 /* GoogleSignInSwift in Frameworks */,
+				FEE204D629BA4E88000D331C /* RealmSwift in Frameworks */,
+				FE4D13A529B0E10C00FB4D0B /* Alamofire in Frameworks */,
+				FECF0D8529A786CB0023CD27 /* FirebaseAuth in Frameworks */,
+				FECF0D9629A7B78C0023CD27 /* GoogleSignIn in Frameworks */,
+				FE4D13A829B0E18400FB4D0B /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +150,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE4D13A929B0EC7400FB4D0B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FE4D13AA29B0EC9F00FB4D0B /* MovieManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		FE4D13AC29B0ECD800FB4D0B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FE4D13AD29B0ECF300FB4D0B /* MovieModel.swift */,
+				FE4D13AF29B0ED4F00FB4D0B /* ResponseModel.swift */,
+				FEE204D729BA549D000D331C /* MovieEntityModel.swift */,
+				FEDB17CF29BF85E4001FA4D1 /* BindableResults.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		FE7CC2D52997C9D200F66E82 = {
 			isa = PBXGroup;
 			children = (
@@ -94,9 +192,16 @@
 		FE7CC2E02997C9D200F66E82 /* Haveto */ = {
 			isa = PBXGroup;
 			children = (
-				FE7CC2E12997C9D200F66E82 /* HavetoApp.swift */,
-				FE7CC2E32997C9D200F66E82 /* ContentView.swift */,
+				FECF0D8829A793D10023CD27 /* Info.plist */,
+				FECF0D8629A787280023CD27 /* GoogleService-Info.plist */,
+				FE7CC30B2997CBA700F66E82 /* Application */,
+				FE7CC30C2997CBB100F66E82 /* Views */,
+				FE4D13AC29B0ECD800FB4D0B /* Models */,
+				FEDF30E52997CCD700FF1859 /* ViewModels */,
+				FE4D13A929B0EC7400FB4D0B /* Managers */,
+				FEB2253229A8FED5002F34DF /* Utilities */,
 				FE7CC2E52997C9D300F66E82 /* Assets.xcassets */,
+				FED868E929A8A5C200BD3081 /* Fonts */,
 				FE7CC2E72997C9D300F66E82 /* Preview Content */,
 			);
 			path = Haveto;
@@ -127,6 +232,77 @@
 			path = HavetoUITests;
 			sourceTree = "<group>";
 		};
+		FE7CC30B2997CBA700F66E82 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FE7CC2E12997C9D200F66E82 /* HavetoApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		FE7CC30C2997CBB100F66E82 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FEDF30E12997CC9600FF1859 /* SplashScreenView.swift */,
+				FECF0D7C29A773E40023CD27 /* SignInView.swift */,
+				FE7CC2E32997C9D200F66E82 /* ContentView.swift */,
+				FECF0D9929A7B8560023CD27 /* HomeView.swift */,
+				FEF4995B29AA0FCB00651AAB /* Search */,
+				FEDF30E82997D14600FF1859 /* ProfileView.swift */,
+				FEA53C0329A8EF5F00F0981A /* SettingsView.swift */,
+				FE4D13B129B0EF6B00FB4D0B /* SingleFilmView.swift */,
+				FEF7383729B4DCB80003C24E /* SelectedFilmView.swift */,
+				FEDB17D129BF86D7001FA4D1 /* MovieRow.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FEB2253229A8FED5002F34DF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FEB2253329A8FEFA002F34DF /* Fonts.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		FED868E929A8A5C200BD3081 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FED868E629A8A5BC00BD3081 /* Montserrat-Black.ttf */,
+				FED868E429A8A5BC00BD3081 /* Montserrat-Bold.ttf */,
+				FED868E729A8A5BC00BD3081 /* Montserrat-ExtraBold.ttf */,
+				FED868E529A8A5BC00BD3081 /* Montserrat-ExtraLight.ttf */,
+				FED868E229A8A5BB00BD3081 /* Montserrat-Light.ttf */,
+				FED868E029A8A5BB00BD3081 /* Montserrat-Medium.ttf */,
+				FED868E129A8A5BB00BD3081 /* Montserrat-Regular.ttf */,
+				FED868E329A8A5BC00BD3081 /* Montserrat-SemiBold.ttf */,
+				FED868E829A8A5BC00BD3081 /* Montserrat-Thin.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FEDF30E52997CCD700FF1859 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FEDF30E32997CCD100FF1859 /* SplashScreenViewModel.swift */,
+				FECF0D8929A794050023CD27 /* SignInViewModel.swift */,
+				FEB2253529A90250002F34DF /* MailViewModel.swift */,
+				FE4D13B329B0F33900FB4D0B /* SearchViewModel.swift */,
+				FEF7383929B4DD0F0003C24E /* SelectedFilmViewModel.swift */,
+				FEE204D029BA3928000D331C /* ProfileViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FEF4995B29AA0FCB00651AAB /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				FEDF30E62997D13500FF1859 /* SearchView.swift */,
+				FEF4995729AA0D0000651AAB /* SearchBar.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +319,15 @@
 			dependencies = (
 			);
 			name = Haveto;
+			packageProductDependencies = (
+				FECF0D8429A786CB0023CD27 /* FirebaseAuth */,
+				FECF0D9529A7B78C0023CD27 /* GoogleSignIn */,
+				FECF0D9729A7B78C0023CD27 /* GoogleSignInSwift */,
+				FE4D13A429B0E10C00FB4D0B /* Alamofire */,
+				FE4D13A729B0E18400FB4D0B /* Kingfisher */,
+				FEE204D329BA4E88000D331C /* Realm */,
+				FEE204D529BA4E88000D331C /* RealmSwift */,
+			);
 			productName = Haveto;
 			productReference = FE7CC2DE2997C9D200F66E82 /* Haveto.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +400,13 @@
 				Base,
 			);
 			mainGroup = FE7CC2D52997C9D200F66E82;
+			packageReferences = (
+				FECF0D8329A786CB0023CD27 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				FECF0D9429A7B78C0023CD27 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				FE4D13A329B0E10B00FB4D0B /* XCRemoteSwiftPackageReference "Alamofire" */,
+				FE4D13A629B0E18400FB4D0B /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				FEE204D229BA4E88000D331C /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = FE7CC2DF2997C9D200F66E82 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,8 +423,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FED868EB29A8A90900BD3081 /* Montserrat-Bold.ttf in Resources */,
+				FED868F229A8A94800BD3081 /* Montserrat-SemiBold.ttf in Resources */,
+				FED868ED29A8A93B00BD3081 /* Montserrat-ExtraBold.ttf in Resources */,
+				FED868EC29A8A93700BD3081 /* Montserrat-Black.ttf in Resources */,
+				FED868EE29A8A93E00BD3081 /* Montserrat-ExtraLight.ttf in Resources */,
+				FED868EF29A8A94000BD3081 /* Montserrat-Light.ttf in Resources */,
 				FE7CC2E92997C9D300F66E82 /* Preview Assets.xcassets in Resources */,
 				FE7CC2E62997C9D300F66E82 /* Assets.xcassets in Resources */,
+				FED868F029A8A94300BD3081 /* Montserrat-Medium.ttf in Resources */,
+				FED868F129A8A94500BD3081 /* Montserrat-Regular.ttf in Resources */,
+				FED868F329A8A94B00BD3081 /* Montserrat-Thin.ttf in Resources */,
+				FECF0D8729A787280023CD27 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +459,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEE204D829BA549D000D331C /* MovieEntityModel.swift in Sources */,
+				FEDB17D229BF86D7001FA4D1 /* MovieRow.swift in Sources */,
+				FEDF30E72997D13500FF1859 /* SearchView.swift in Sources */,
+				FECF0D7D29A773E40023CD27 /* SignInView.swift in Sources */,
+				FE4D13AB29B0EC9F00FB4D0B /* MovieManager.swift in Sources */,
+				FEF7383829B4DCB80003C24E /* SelectedFilmView.swift in Sources */,
+				FECF0D9A29A7B8560023CD27 /* HomeView.swift in Sources */,
 				FE7CC2E42997C9D200F66E82 /* ContentView.swift in Sources */,
+				FEE204D129BA3928000D331C /* ProfileViewModel.swift in Sources */,
+				FEDF30E42997CCD100FF1859 /* SplashScreenViewModel.swift in Sources */,
+				FE4D13B429B0F33900FB4D0B /* SearchViewModel.swift in Sources */,
+				FEA53C0429A8EF5F00F0981A /* SettingsView.swift in Sources */,
+				FECF0D8A29A794050023CD27 /* SignInViewModel.swift in Sources */,
+				FEF4995829AA0D0000651AAB /* SearchBar.swift in Sources */,
+				FEDB17D029BF85E4001FA4D1 /* BindableResults.swift in Sources */,
+				FEF7383A29B4DD0F0003C24E /* SelectedFilmViewModel.swift in Sources */,
+				FE4D13B229B0EF6B00FB4D0B /* SingleFilmView.swift in Sources */,
 				FE7CC2E22997C9D200F66E82 /* HavetoApp.swift in Sources */,
+				FEB2253429A8FEFA002F34DF /* Fonts.swift in Sources */,
+				FEDF30E92997D14600FF1859 /* ProfileView.swift in Sources */,
+				FE4D13AE29B0ECF300FB4D0B /* MovieModel.swift in Sources */,
+				FEDF30E22997CC9600FF1859 /* SplashScreenView.swift in Sources */,
+				FE4D13B029B0ED4F00FB4D0B /* ResponseModel.swift in Sources */,
+				FEB2253629A90250002F34DF /* MailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +644,7 @@
 				DEVELOPMENT_TEAM = 767DT3Q3RN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Haveto/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -431,7 +656,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.postnikova.Haveto;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Haveto;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -449,6 +674,7 @@
 				DEVELOPMENT_TEAM = 767DT3Q3RN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Haveto/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -460,7 +686,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.postnikova.Haveto;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Haveto;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -583,6 +809,87 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FE4D13A329B0E10B00FB4D0B /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.2;
+			};
+		};
+		FE4D13A629B0E18400FB4D0B /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.3.2;
+			};
+		};
+		FECF0D8329A786CB0023CD27 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		FECF0D9429A7B78C0023CD27 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.0;
+			};
+		};
+		FEE204D229BA4E88000D331C /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FE4D13A429B0E10C00FB4D0B /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FE4D13A329B0E10B00FB4D0B /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		FE4D13A729B0E18400FB4D0B /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FE4D13A629B0E18400FB4D0B /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		FECF0D8429A786CB0023CD27 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FECF0D8329A786CB0023CD27 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		FECF0D9529A7B78C0023CD27 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FECF0D9429A7B78C0023CD27 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		FECF0D9729A7B78C0023CD27 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FECF0D9429A7B78C0023CD27 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		FEE204D329BA4E88000D331C /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEE204D229BA4E88000D331C /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		FEE204D529BA4E88000D331C /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEE204D229BA4E88000D331C /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FE7CC2D62997C9D200F66E82 /* Project object */;
 }
