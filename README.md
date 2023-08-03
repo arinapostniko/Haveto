@@ -4,11 +4,11 @@ Haveto is an app to mark movies you have watched.
 ## Screenshots
 
 <p align="left">
-<img src="images/Simulator Screen Shot - iPhone 14 Pro - 2023-03-23 at 11.48.46.png" width="300">
-<img src="images/Simulator Screen Shot - iPhone 14 Pro - 2023-03-23 at 11.49.14.png" width="300">
-<img src="images/Simulator Screen Shot - iPhone 14 Pro - 2023-03-23 at 11.49.38.png" width="300">
-<img src="images/Simulator Screen Shot - iPhone 14 Pro - 2023-03-23 at 11.49.20.png" width="300">
-<img src="images/Simulator Screen Shot - iPhone 14 Pro - 2023-03-23 at 11.49.26.png" width="300">
+<img src="images/Screenshot 2023-08-03 at 5.27.59 PM.png" width="400">
+<img src="images/Screenshot 2023-08-03 at 5.21.56 PM.png" width="400">
+<img src="images/Screenshot 2023-08-03 at 5.24.03 PM.png" width="400">
+<img src="images/Screenshot 2023-08-03 at 5.23.30 PM.png" width="400">
+<img src="images/Screenshot 2023-08-03 at 5.24.16 PM.png" width="400">
 </p>
 
 ## About
